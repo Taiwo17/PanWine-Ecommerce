@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.0625rem 4rem 0 4rem;
+  margin-bottom: 10rem;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.input_group {
+  width: 500px;
+  background: #ffffff;
+  border: 1px solid #411530;
+  border-radius: 0.75rem 0 0 0.75rem;
+  height: inherit;
+  /* padding: 2rem; */
+}
+.svg_icon {
+  background-color: #411530;
+  height: inherit;
+  color: white;
+  border-radius: 0px 12px 12px 0px;
+  padding: 20px;
+}
