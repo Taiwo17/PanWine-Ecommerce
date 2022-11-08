@@ -1,17 +1,35 @@
 import React from 'react'
 import styles from './navbav.module.css'
+import { useSelector } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Navbar({ login, signup, user }) {
+  const cart = useSelector((state) => state.cart)
+  const navigate = useNavigate()
+
+  function linkNav() {
+    getTotalQuantity() === 0 ? navigate('/') : navigate('/cart-display')
+  }
+
+  function getTotalQuantity() {
+    let total = 0
+    cart.forEach((item) => {
+      total += item.quantity
+    })
+    return total
+  }
   return (
     <nav className={styles.container}>
       <div>
         <h1>PanWines</h1>
       </div>
       <div>
-        <ul>
-          <li>Home </li>
-          <li>Product</li>
-          <li>
+        <ul className={styles.link_group}>
+          <Link className={styles.link_input} to={'/'}>
+            Home
+          </Link>
+          <Link className={styles.link_input}>Product</Link>
+          <li className={styles.link_input} onClick={() => linkNav()}>
             Shopping Cart
             <svg
               width='32'
@@ -25,13 +43,19 @@ function Navbar({ login, signup, user }) {
                 fill='currentColor'
               />
             </svg>
+            <span className={styles.span}>
+              {getTotalQuantity() === 0 ? null : getTotalQuantity()}
+            </span>
           </li>
         </ul>
       </div>
-      <div>
-        <button>{login} </button>
-        <button> {signup} </button>
-      </div>
+      {login && signup ? (
+        <div>
+          <button>{login} </button>
+          <button> {signup} </button>
+        </div>
+      ) : null}
+
       {user ? (
         <div>
           <img src={user} alt='User' />

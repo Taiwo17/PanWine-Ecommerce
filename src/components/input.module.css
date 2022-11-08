@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 5.0625rem 4rem 0 4rem;
-  margin-bottom: 10rem;
 }
 
 .input_container {
@@ -18,7 +17,7 @@
   border: 1px solid #411530;
   border-radius: 0.75rem 0 0 0.75rem;
   height: inherit;
-  /* padding: 2rem; */
+  padding: 1rem;
 }
 .svg_icon {
   background-color: #411530;

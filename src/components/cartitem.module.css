@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+.img_container {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  width: 55%;
+}
+.img_container > img {
+  width: 80px;
+  height: 100px;
+  margin-bottom: 1.5rem;
+}
+.product_title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #411530;
+}
+.remove {
+  color: #333;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.price_tag {
+  width: 15%;
+}
+.btn_tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 15%;
+}
+.btn_tag > p {
+  border: 1px solid #411530;
+  padding: 4px;
+  width: 52px;
+  height: 28px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #411530;
+}
+.btn_tag > button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 20px;
+  color: #411530;
+  opacity: 0.6;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

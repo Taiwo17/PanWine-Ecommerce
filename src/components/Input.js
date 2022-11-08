@@ -17,7 +17,7 @@ function Input() {
           className={styles.input_group}
           type='text'
           value={value.fPlaceholder}
-          placeholder={value}
+          // placeholder='Search Name'
           onChange={handleChange}
         />
         <svg
@@ -41,7 +41,7 @@ function Input() {
           className={styles.input_group}
           type='text'
           value={value.sPlaceholder}
-          placeholder={value}
+          // placeholder='Search Categories'
           onChange={handleChange}
         />
         <svg
