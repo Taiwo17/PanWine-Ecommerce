@@ -51,8 +51,16 @@ function Navbar({ login, signup, user }) {
       </div>
       {login && signup ? (
         <div>
-          <button>{login} </button>
-          <button> {signup} </button>
+          <button>
+            <Link to={'/login'} className={styles.link_input_btn}>
+              {login}
+            </Link>
+          </button>
+          <button>
+            <Link to={'/sign-up'} className={styles.link_input_btn}>
+              {signup}
+            </Link>
+          </button>
         </div>
       ) : null}
 

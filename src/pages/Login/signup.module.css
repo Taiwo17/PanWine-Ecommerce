@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  gap: 2rem;
+}
+.img_container {
+  position: relative;
+}
+.pan_text {
+  position: absolute;
+  top: 0;
+  padding: 2.1875rem;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+.img_container > img {
+  width: 37.5rem;
+  /* height: 37.5rem; */
+}
+.text_container {
+  padding: 4rem 2rem 0 0;
+}
+.panwine_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #411530;
+  margin-bottom: 3.125rem;
+}
+.input_container_one {
+  margin-bottom: 2rem;
+}
+.input_container {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.input_link {
+  width: 41rem;
+  border: 0.0625rem solid rgba(65, 21, 48, 0.6);
+  border-radius: 0.75rem;
+  height: 3.125rem;
+  padding-left: 0.75rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #411530;
+}
+.visibility {
+  position: absolute;
+  top: 0.9375rem;
+  right: 1.375rem;
+  cursor: pointer;
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.forget_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #411530;
+  margin-bottom: 2rem;
+}
+.reset {
+  text-decoration: none;
+  color: #411530;
+}
+
+.btn_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn_group > button {
+  width: 26.25rem;
+  background-color: #411530;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  height: 3.125rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 32px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+.create_account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.create_account > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.create_account > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 26.25rem;
+  background-color: #fff;
+  color: white;
+  border: 1px solid #411530;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  height: 3.125rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 32px;
+}
+
+.link_create {
+  text-decoration: none;
+  color: #411530;
+}
